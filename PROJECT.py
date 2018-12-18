@@ -3352,6 +3352,8 @@ class Example(QMainWindow, Ui_SeaBattle, Ui_MainWindow):
                                 self.Bi6, self.Bi7, self.Bi8, self.Bi9, self.Bi10],
                                [self.Bj1, self.Bj2, self.Bj3, self.Bj4, self.Bj5,
                                 self.Bj6, self.Bj7, self.Bj8, self.Bj9, self.Bj10]]
+            #Кнопки названы по принципу: B(Button) + координата_1 + координата_2
+            #Здесь кнопки отображают поле игрока
 
             self.player_sea = [['-', '-', '-', '-', '-', '-', '-', '-', '-', '-'],
                                ['-', '-', '-', '-', '-', '-', '-', '-', '-', '-'],
@@ -3641,6 +3643,9 @@ class Example(QMainWindow, Ui_SeaBattle, Ui_MainWindow):
                                self.li6, self.li7, self.li8, self.li9, self.li10],
                               [self.lj1, self.lj2, self.lj3, self.lj4, self.lj5,
                                self.lj6, self.lj7, self.lj8, self.lj9, self.lj10]]
+
+            #Это лейблы. Названы как и кнопки, и отображают поле игрока
+            #Кнопки тут отображают поле компьютера
             for i in range(10):
                 for o in range(10):
                     self.sp_labels[i][o].setText(' ' + self.player_sea[i][o])
