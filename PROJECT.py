@@ -9,7 +9,7 @@ class Ui_SeaBattle(object):
     def setupUi2(self, SeaBattle):
         SeaBattle.setObjectName("SeaBattle")
         SeaBattle.resize(1358, 720)
-        SeaBattle.setStyleSheet("background-color: rgb(40, 86, 185)")
+        SeaBattle.setStyleSheet("background-color: rgb(89, 128, 255)")
         self.centralwidget = QtWidgets.QWidget(SeaBattle)
         self.centralwidget.setObjectName("centralwidget")
         self.label = QtWidgets.QLabel(self.centralwidget)
@@ -2230,7 +2230,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(1361, 720)
-        MainWindow.setStyleSheet("background-color: rgb(40, 86, 185)")
+        MainWindow.setStyleSheet("background-color: rgb(89, 128, 255)")
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.pushButton = QtWidgets.QPushButton(self.centralwidget)
