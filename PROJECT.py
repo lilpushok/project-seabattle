@@ -3531,9 +3531,10 @@ class Example(QMainWindow, Ui_SeaBattle, Ui_MainWindow):
             coord_num = int(button_coords[1])
             sp1 = self.neighboor(coord_let, coord_num)[0]
             sp2 = self.neighboor(coord_let, coord_num)[1]
-            self.player_sea[coord_let][coord_num] = '+'
             if ('+' in sp1 and self.count not in [3, 6, 9, 11, 13, 15, 16, 17, 18,
                                                   19]) or self.count in [0, 4, 7, 10, 12, 14]:
+
+                self.player_sea[coord_let][coord_num] = '+'
                 self.count += 1
                 self.sp.append([coord_let, coord_num])
                 Button.setText('+')
