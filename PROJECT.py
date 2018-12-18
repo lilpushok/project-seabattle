@@ -5,6 +5,7 @@ from PyQt5.QtGui import QColor
 from PyQt5 import uic
 from PyQt5 import QtCore, QtGui, QtWidgets
 
+
 class Ui_SeaBattle(object):
     def setupUi2(self, SeaBattle):
         SeaBattle.setObjectName("SeaBattle")
@@ -2226,6 +2227,7 @@ class Ui_SeaBattle(object):
         self.label_21.setText(_translate("SeaBattle", "\"+\" - клетка вашего корабля"))
         self.label_turn.setText(_translate("SeaBattle", "                     Ваш Ход."))
 
+
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
@@ -3302,6 +3304,7 @@ class Ui_MainWindow(object):
         self.Bc3.setText(_translate("MainWindow", "-"))
         self.super_label.setText(_translate("MainWindow", "Расставьте четырёхпалубный корабль:"))
 
+
 class Example(QMainWindow, Ui_SeaBattle, Ui_MainWindow):
     def __init__(self):
         super().__init__()
@@ -3313,7 +3316,7 @@ class Example(QMainWindow, Ui_SeaBattle, Ui_MainWindow):
     def get_coords(self, lab):
         for i in range(10):
             if lab in self.sp_labels[i]:
-                return([i, self.sp_labels[i].index(lab)])
+                return ([i, self.sp_labels[i].index(lab)])
 
     def chooseUI(self):
         self.setupUi(self)
@@ -3464,6 +3467,7 @@ class Example(QMainWindow, Ui_SeaBattle, Ui_MainWindow):
             self.Bj10.clicked.connect(lambda: self.fun(self.Bj10, '99'))
             self.count = 0
             self.sp = []
+
         self.show()
 
     def neighboor(self, coord_let, coord_num):
@@ -4193,7 +4197,7 @@ class Example(QMainWindow, Ui_SeaBattle, Ui_MainWindow):
                     sp = self.neighboorhood(coord_let, coord_num)[1]
                     for i in range(4):
                         if sp[i] != '0' and (sp[i].text() == ' -' or sp[i].text() == ' +'):
-                           self.zero_prioryty.append(sp[i])
+                            self.zero_prioryty.append(sp[i])
                     for i in range(4, 8):
                         if sp[i] != '0' and sp[i].text() == ' -':
                             self.deads.append(sp[i])
